@@ -14,8 +14,8 @@
     <!-- boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- app css -->
-    <link rel="stylesheet" href="./assets/css/grid.css">
-    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
 </head>
 
 <body>
@@ -198,8 +198,77 @@
     <!-- end header -->
 
     <!-- banner -->
-    
+
+    <div class="hero container">
+        <div class="slider">
+            <!-- slide item -->
+            <div class="slide">
+                <div class="info">
+                    <div class="info-content">
+                        <h3 class="top-down">
+                            Trending Item
+                        </h3>
+                        <h2 class="top-down trans-delay-0-2">
+                            WOMEN'S LATEST FASHION SALE
+                        </h2>
+                        <p class="top-down trans-delay-0-4">
+                            starting at $ 20.00
+                        </p>
+                        <div class="top-down trans-delay-0-6">
+                            <button class="btn-flat btn-hover">
+                                <span>shop now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="img top-down">
+                    <img src="./assets/images/banner-1.jpg" alt="">
+                </div>
+            </div>
+            <!-- end slide item -->
+        </div>
+        <!-- slider controller -->
+        <div class="slide-control-container">
+            <button class="slide-control slide-prev">
+                <i class='bx bxs-chevron-left'></i>
+            </button>
+            <button class="slide-control slide-next">
+                <i class='bx bxs-chevron-right'></i>
+            </button>
+        </div>
+        <!-- end slider controller -->
+    </div>
     <!-- end banner -->
+
+    <!-- categories -->
+    <div class="categories container">
+        <div class="row" id="categories">
+            <div class="col-3 col-md-4 col-sm-12 categories-col">
+                <div class="categories-item">
+                    <div class="categories-item-img">
+                        <img src="./assets/images/icons/dress.svg" alt="">
+                    </div>
+                    <div class="categories-content-box">
+                        <div class="categories-item-info">
+                            <div class="categories-item-name">
+                                DRESS & FROCK
+                            </div>
+                            <div class="categories-item-amount">
+                                (53)
+                            </div>
+                        </div>
+                        <div class="categories-btn">
+                            <a href="#">show all</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end categories -->
+
+    <!-- app js -->
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
