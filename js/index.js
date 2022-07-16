@@ -65,6 +65,6 @@ categories.forEach(e => {
     categories_list.insertAdjacentHTML("beforeend", prod)
 })
 
-let categories_cols = document.querySelectorAll('.categories-col')
-categories_cols[3].style.paddingRight = "0px";
-categories_cols[7].style.paddingRight = "0px";
+// let categories_cols = document.querySelectorAll('.categories-col')
+// categories_cols[3].style.paddingRight = "0px";
+// categories_cols[7].style.paddingRight = "0px";
