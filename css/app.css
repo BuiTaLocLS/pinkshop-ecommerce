@@ -87,7 +87,21 @@ img {
     justify-content: space-between;
     align-items: center;
     color: var(--gray);
-    border-bottom: 1px solid var(--border-color);
+    /* border-bottom: 1px solid var(--border-color); */
+    position: relative;
+}
+
+.top-header::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    left: -5000px;
+    width: 5000vw;
+    height: 1px;
+    background-color: var(--border-color);
 }
 
 .top-header ul {
@@ -183,7 +197,20 @@ ul.divided>li {
     justify-content: space-between;
     height: var(--mid-header-size);
     background-color: var(--main-bg-color);
-    border-bottom: 1px solid var(--border-color);
+    /* border-bottom: 1px solid var(--border-color); */
+}
+
+.mid-header::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    left: -5000px;
+    width: 5000vw;
+    height: 1px;
+    background-color: var(--border-color);
 }
 
 .logo {
@@ -485,6 +512,9 @@ ul.divided>li {
 /* end banner */
 
 /* categories */
+.top-body {
+    margin-top: 30px;
+}
 
 .categories.container {}
 
@@ -549,6 +579,8 @@ ul.divided>li {
     border: 1px solid var(--border-color);
     border-radius: 10px;
     padding: 20px;
+    position: sticky;
+    top: 26px;
 }
 
 #menu h3 {
@@ -1012,6 +1044,11 @@ ul.divided>li {
 .service-container a i {
     font-size: 35px;
     color: var(--pink);
+    transition: 0.2s;
+}
+
+.service-item:hover i {
+    color: #454545;
 }
 
 .service-content {
