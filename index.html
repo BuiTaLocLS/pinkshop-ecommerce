@@ -276,13 +276,19 @@
                         </div>
                     </div>
                     <!-- slider controller -->
-                    <button class="slide-control slide-prev">
+                    <button class="slide-control slide-prev" onclick="plusSlides(+1)">
                         <i class='bx bxs-chevron-left'></i>
                     </button>
-                    <button class="slide-control slide-next">
+                    <button class="slide-control slide-next" onclick="plusSlides(-1)">
                         <i class='bx bxs-chevron-right'></i>
                     </button>
                     <!-- end slider controller -->
+
+                    <div class="dot-container" style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
                 </div>
                 <!-- end slide item -->
             </div>

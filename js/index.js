@@ -17,45 +17,36 @@ function shuffle(array) {
 }
 
 // Slider
-let slide_index = 0
-let slide_play = true
-let slides = document.querySelectorAll('.slide')
+let slideIndex = 1;
+showSlides(slideIndex);
 
-hideAllSlide = () => {
-    slides.forEach(e => {
-        e.classList.remove('active')
-    })
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
 
-showSlide = () => {
-    hideAllSlide()
-    slides[slide_index].classList.add('active')
+function currentSlide(n) {
+    showSlides(slideIndex = n);
 }
 
-nextSlide = () => slide_index = slide_index + 1 === slides.length ? 0 : slide_index + 1
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].className = slides[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].className += " active";
+    dots[slideIndex - 1].className += " active";
+}
 
-prevSlide = () => slide_index = slide_index - 1 < 0 ? slides.length - 1 : slide_index - 1
-
-// pause slide when hover slider
-
-document.querySelector('.slider').addEventListener('mouseover', () => slide_play = false)
-
-// enable slide when mouse leave out slider
-document.querySelector('.slider').addEventListener('mouseleave', () => slide_play = true)
-
-// slider controll
-
-document.querySelector('.slide-next').addEventListener('click', () => {
-    nextSlide()
-    showSlide()
-})
-
-document.querySelector('.slide-prev').addEventListener('click', () => {
-    prevSlide()
-    showSlide()
-})
-
-showSlide()
+setInterval(() => {
+    plusSlides(1)
+}, 2000);
 
 // categories
 
