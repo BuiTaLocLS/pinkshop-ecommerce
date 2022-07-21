@@ -92,7 +92,7 @@ let categories_list = document.querySelector('#categories')
 
 categories.forEach(e => {
     let prod = `
-    <div class="col-3 col-md-4 col-sm-12 categories-col">
+    <div class="col-3 col-md-6 col-sm-12 categories-col">
         <div class="categories-item">
             <div class="categories-item-img ">
                 <img src="${e.image}" alt="">
@@ -232,7 +232,7 @@ let new_products_list = document.querySelector('#new-products')
 
 new_products.forEach(e => {
     let prod = `
-    <div class="col-2 col-md-6 col-sm-12">
+    <div class="col-2 col-md-4 col-sm-6">
     <div class="showcase-products">
 
         <div class="showcase-banner">
@@ -302,7 +302,7 @@ let top_rated_list = document.querySelector('#top-rated-products')
 
 top_rated_products.forEach(e => {
     let prod = `
-    <div class="col-2 col-md-6 col-sm-12">
+    <div class="col-2 col-md-4 col-sm-6">
     <div class="showcase-products">
 
         <div class="showcase-banner">

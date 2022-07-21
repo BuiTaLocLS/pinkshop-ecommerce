@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PINKshop - eCommerce Website</title>
+    <link rel="icon" type="image/gif/png" href="./assets/images/logo/p.png">
+    <title>PinkShop - eCommerce Website</title>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -24,16 +25,27 @@
         <!-- mobile menu -->
         <div class="mobile-menu bg-main">
             <a href="#" class="mb-logo">PShop</a>
-            <span class="mb-menu-toggle" id="mb-menu-toggle">
-                <i class='bx bx-menu'></i>
-            </span>
+            <div class="mobile-bottom-navigation">
+                <button class="action-btn" id="mb-menu-toggle">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <button class="action-btn">
+                    <i class='bx bx-shopping-bag'></i>
+                </button>
+                <button class="action-btn">
+                    <i class='bx bx-home'></i>
+                </button>
+                <button class="action-btn">
+                    <i class='bx bx-heart'></i>
+                </button>
+                <button class="action-btn" id="mb-grid-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </button>
+            </div>
         </div>
         <!-- end mobile menu -->
         <!-- main header -->
         <div class="header-wrapper" id="header-wrapper">
-            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
-                <i class='bx bx-x'></i>
-            </span>
             <!-- top header -->
             <div class="bg-main">
                 <div class="top-header container">
@@ -86,6 +98,9 @@
             <div class="bg-main">
                 <div class="mid-header container">
                     <a href="#" class="logo">Pshop</a>
+                    <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                        <i class='bx bx-x'></i>
+                    </span>
                     <div class="search">
                         <input type="text" placeholder="Enter your product name...">
                         <i class='bx bx-search-alt'></i>
@@ -200,106 +215,102 @@
     <!-- banner -->
 
     <div class="hero container">
-        <div class="row">
-            <div class="col-12">
-                <div class="slider">
-                    <!-- slide item -->
-                    <div class="slide active">
-                        <div class="info">
-                            <div class="info-content">
-                                <h3 class="top-down">
-                                    Trending Item
-                                </h3>
-                                <h2 class="top-down trans-delay-0-2">
-                                    WOMEN'S LATEST FASHION SALE
-                                </h2>
-                                <p class="top-down trans-delay-0-4">
-                                    starting at $ 20.00
-                                </p>
-                                <div class="top-down trans-delay-0-6">
-                                    <button class="btn-flat btn-hover">
-                                        <span>shop now</span>
-                                    </button>
-                                </div>
-                            </div>
+        <div class="slider">
+            <!-- slide item -->
+            <div class="slide active">
+                <div class="info">
+                    <div class="info-content">
+                        <h3 class="top-down">
+                            Trending Item
+                        </h3>
+                        <h2 class="top-down trans-delay-0-2">
+                            WOMEN'S LATEST FASHION SALE
+                        </h2>
+                        <p class="top-down trans-delay-0-4">
+                            starting at $ 20.00
+                        </p>
+                        <div class="top-down trans-delay-0-6">
+                            <button class="btn-flat btn-hover">
+                                <span>shop now</span>
+                            </button>
                         </div>
-                        <div class="img top-down">
-                            <img src="./assets/images/banner-1.jpg" alt="">
-                        </div>
-                    </div>
-
-                    <div class="slide">
-                        <div class="info">
-                            <div class="info-content">
-                                <h3 class="top-down">
-                                    Sale Offer
-                                </h3>
-                                <h2 class="top-down trans-delay-0-2">
-                                    NEW FASHION SUMMER SALE
-                                </h2>
-                                <p class="top-down trans-delay-0-4">
-                                    starting at $ 29.99
-                                </p>
-                                <div class="top-down trans-delay-0-6">
-                                    <button class="btn-flat btn-hover">
-                                        <span>shop now</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="img left-right">
-                            <img src="./assets/images/banner-2.jpg" alt="">
-                        </div>
-                    </div>
-
-                    <div class="slide">
-                        <div class="info">
-                            <div class="info-content">
-                                <h3 class="top-down">
-                                    Trending Item
-                                </h3>
-                                <h2 class="top-down trans-delay-0-2">
-                                    WOMEN'S LATEST FASHION SALE
-                                </h2>
-                                <p class="top-down trans-delay-0-4">
-                                    starting at $ 20.00
-                                </p>
-                                <div class="top-down trans-delay-0-6">
-                                    <button class="btn-flat btn-hover">
-                                        <span>shop now</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="img right-left">
-                            <img src="./assets/images/banner-3.jpg" alt="">
-                        </div>
-                    </div>
-                    <!-- slider controller -->
-                    <button class="slide-control slide-prev" onclick="plusSlides(+1)">
-                        <i class='bx bxs-chevron-left'></i>
-                    </button>
-                    <button class="slide-control slide-next" onclick="plusSlides(-1)">
-                        <i class='bx bxs-chevron-right'></i>
-                    </button>
-                    <!-- end slider controller -->
-
-                    <div class="dot-container" style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
                     </div>
                 </div>
-                <!-- end slide item -->
+                <div class="img top-down">
+                    <img src="./assets/images/banner-1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="info">
+                    <div class="info-content">
+                        <h3 class="top-down">
+                            Sale Offer
+                        </h3>
+                        <h2 class="top-down trans-delay-0-2">
+                            NEW FASHION SUMMER SALE
+                        </h2>
+                        <p class="top-down trans-delay-0-4">
+                            starting at $ 29.99
+                        </p>
+                        <div class="top-down trans-delay-0-6">
+                            <button class="btn-flat btn-hover">
+                                <span>shop now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="img left-right">
+                    <img src="./assets/images/banner-2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="info">
+                    <div class="info-content">
+                        <h3 class="top-down">
+                            Trending Item
+                        </h3>
+                        <h2 class="top-down trans-delay-0-2">
+                            WOMEN'S LATEST FASHION SALE
+                        </h2>
+                        <p class="top-down trans-delay-0-4">
+                            starting at $ 20.00
+                        </p>
+                        <div class="top-down trans-delay-0-6">
+                            <button class="btn-flat btn-hover">
+                                <span>shop now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="img right-left">
+                    <img src="./assets/images/banner-3.jpg" alt="">
+                </div>
+            </div>
+            <!-- slider controller -->
+            <button class="slide-control slide-prev" onclick="plusSlides(+1)">
+                <i class='bx bxs-chevron-left'></i>
+            </button>
+            <button class="slide-control slide-next" onclick="plusSlides(-1)">
+                <i class='bx bxs-chevron-right'></i>
+            </button>
+            <!-- end slider controller -->
+
+            <div class="dot-container" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
+        <!-- end slide item -->
     </div>
     <!-- end banner -->
 
     <!-- categories -->
     <div class="categories container">
         <div class="row" id="categories">
-            <div class="col-3 col-md-4 col-sm-12 categories-col">
+            <div class="col-3 col-md-6 col-sm-12 categories-col">
                 <div class="categories-item">
                     <div class="categories-item-img">
                         <img src="./assets/images/icons/dress.svg" alt="">
@@ -326,9 +337,12 @@
     <!-- top body -->
     <div class="top-body container">
         <div class="row">
-            <div class="col-3">
+            <div class="col-3 col-md-4">
                 <div id="menu">
                     <h3>categories</h3>
+                    <span class="mb-menu-toggle mb-menu-close" id="mb-grid-close">
+                        <i class='bx bx-x'></i>
+                    </span>
                     <ul>
                         <li>
                             <a href="#">
@@ -598,7 +612,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-9">
+            <div class="col-9 col-md-12">
                 <div class="deal-of-the-day">
                     <h2 class="title">
                         Deal Of The Day
@@ -795,7 +809,7 @@
     <div class="container">
         <div class="testimonials-box">
             <div class="row">
-                <div class="col-9">
+                <div class="col-9 col-md-12 col-sm-12">
                     <div class="cta-container">
                         <img src="./assets/images/banner-2.jpg" alt="summer collection" class="cta-banner">
                         <a href="#" class="cta-content">
@@ -806,7 +820,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 col-md-12 col-sm-12">
                     <div class="service">
                         <h2 class="title">Our Services</h2>
                         <div class="service-container">
