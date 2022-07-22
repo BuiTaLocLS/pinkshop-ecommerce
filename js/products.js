@@ -114,6 +114,7 @@ let products_list = document.querySelector('#products')
 products.forEach(e => {
     let prod = `
     <div class="col-4 col-md-4 col-sm-12">
+    <a href="./product-detail.html">
     <div class="showcase-products">
 
         <div class="showcase-banner">
@@ -170,6 +171,7 @@ products.forEach(e => {
 
         </div>
     </div>
+    </a>
 </div>
     `
     products_list.insertAdjacentHTML("beforeend", prod)

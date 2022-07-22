@@ -212,283 +212,235 @@
     </header>
     <!-- end header -->
 
-    <!-- products content -->
+    <!-- product-detail content -->
+    <div class="container box">
+        <div class="breadcumb">
+            <a href="./index.html">home</a>
+            <span><i class='bx bxs-chevrons-right'></i></span>
+            <a href="./products.html">all products</a>
+            <span><i class='bx bxs-chevrons-right'></i></span>
+            <a href="./product-detail.html">ROSE GOLD DIAMONDS EARRING</a>
+        </div>
+    </div>
+   
     <div class="container">
-        <div class="row">
-            <div class="col-12">
+        <div class="row product-row">
+            <div class="col-5 col-md-12">
+                <div class="product-img" id="product-img">
+                    <img src="./assets/images/products/jewellery-1.jpg" alt="">
+                </div>
                 <div class="box">
-                    <div class="breadcumb">
-                        <a href="./index.html">home</a>
-                        <span><i class='bx bxs-chevrons-right'></i></span>
-                        <a href="./products.html">all products</a>
+                    <div class="product-img-list">
+                        <div class="product-img-item">
+                            <img src="./assets/images/products/jewellery-1.jpg" alt="">
+                        </div>
+                        <div class="product-img-item">
+                            <img src="./assets/images/products/jewellery-2.jpg" alt="">
+                        </div>
+                        <div class="product-img-item">
+                            <img src="./assets/images/products/jewellery-3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-7 col-md-12">
+                <div class="product-info">
+                    <h1>
+                        ROSE GOLD DIAMONDS EARRING
+                    </h1>
+                    <div class="product-info-detail">
+                        <span class="product-info-detail-title">Brand:</span>
+                        <a href="#">Gucci</a>
+                    </div>
+                    <div class="product-info-detail">
+                        <span class="product-info-detail-title">Rated:</span>
+                        <span class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </span>
+                    </div>
+                    <p class="product-description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo libero alias officiis dolore
+                        doloremque eveniet culpa dignissimos, itaque, cum animi excepturi sed veritatis asperiores
+                        soluta, nisi atque quae illum. Ipsum.
+                    </p>
+                    <div class="product-info-price">$2345</div>
+                    <div class="product-quantity-wrapper">
+                        <span class="product-quantity-btn">
+                            <i class='bx bx-minus'></i>
+                        </span>
+                        <span class="product-quantity">1</span>
+                        <span class="product-quantity-btn">
+                            <i class='bx bx-plus'></i>
+                        </span>
+                    </div>
+                    <div>
+                        <button class="btn-flat btn-hover">add to cart</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="box">
-            <div class="row">
-                <div class="col-3 filter-col" id="filter-col">
-                    <div class="box filter-toggle-box">
-                        <button class="btn-flat btn-hover btn-filter" id="filter-close">close</button>
-                    </div>
-                    <div class="box">
-                        <span class="filter-header">
-                            Categories
-                        </span>
-                        <ul class="filter-list">
-                            <li><a href="#">Electronics</a></li>
-                            <li><a href="#">Men's</a></li>
-                            <li><a href="#">Women's</a></li>
-                            <li><a href="#">Sport</a></li>
-                        </ul>
-                    </div>
-                    <div class="box">
-                        <span class="filter-header">
-                            Price
-                        </span>
-                        <div class="price-range">
-                            <input type="text">
-                            <span>-</span>
-                            <input type="text">
-                        </div>
-                    </div>
-                    <div class="box">
-                        <ul class="filter-list">
-                            <li>
-                                <div class="group-checkbox">
-                                    <input type="checkbox" id="status1">
-                                    <label for="status1">
-                                        On sale
-                                        <i class='bx bx-check'></i>
-                                    </label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="group-checkbox">
-                                    <input type="checkbox" id="status2">
-                                    <label for="status2">
-                                        In stock
-                                        <i class='bx bx-check'></i>
-                                    </label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="group-checkbox">
-                                    <input type="checkbox" id="status3">
-                                    <label for="status3">
-                                        Featured
-                                        <i class='bx bx-check'></i>
-                                    </label>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="box">
-                        <span class="filter-header">
-                            Brands
-                        </span>
-                        <ul class="filter-list">
-                            <li>
-                                <div class="group-checkbox">
-                                    <input type="checkbox" id="remember1" checked="checked">
-                                    <label for="remember1">
-                                        Gucci
-                                        <i class='bx bx-check'></i>
-                                    </label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="group-checkbox">
-                                    <input type="checkbox" id="remember2">
-                                    <label for="remember2">
-                                        LV
-                                        <i class='bx bx-check'></i>
-                                    </label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="group-checkbox">
-                                    <input type="checkbox" id="remember3">
-                                    <label for="remember3">
-                                        Logitech
-                                        <i class='bx bx-check'></i>
-                                    </label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="group-checkbox">
-                                    <input type="checkbox" id="remember4">
-                                    <label for="remember4">
-                                        Samsung
-                                        <i class='bx bx-check'></i>
-                                    </label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="group-checkbox">
-                                    <input type="checkbox" id="remember5">
-                                    <label for="remember5">
-                                        Sony
-                                        <i class='bx bx-check'></i>
-                                    </label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="group-checkbox">
-                                    <input type="checkbox" id="remember5">
-                                    <label for="remember5">
-                                        Others
-                                        <i class='bx bx-check'></i>
-                                    </label>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="box">
-                        <span class="filter-header">
-                            Colors
-                        </span>
-                        <ul class="filter-list">
-                            <li>
-                                <div class="group-checkbox">
-                                    <input type="checkbox" id="remember1">
-                                    <label for="remember1">
-                                        Red
-                                        <i class='bx bx-check'></i>
-                                    </label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="group-checkbox">
-                                    <input type="checkbox" id="remember2">
-                                    <label for="remember2">
-                                        Blue
-                                        <i class='bx bx-check'></i>
-                                    </label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="group-checkbox">
-                                    <input type="checkbox" id="remember3">
-                                    <label for="remember3">
-                                        White
-                                        <i class='bx bx-check'></i>
-                                    </label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="group-checkbox">
-                                    <input type="checkbox" id="remember4">
-                                    <label for="remember4">
-                                        Pink
-                                        <i class='bx bx-check'></i>
-                                    </label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="group-checkbox">
-                                    <input type="checkbox" id="remember5">
-                                    <label for="remember5">
-                                        Yellow
-                                        <i class='bx bx-check'></i>
-                                    </label>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="box">
-                        <span class="filter-header">
-                            rating
-                        </span>
-                        <ul class="filter-list">
-                            <li>
-                                <div class="group-checkbox">
-                                    <input type="checkbox" id="remember1">
-                                    <label for="remember1">
-                                        <span class="rating">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </span>
-                                        <i class='bx bx-check'></i>
-                                    </label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="group-checkbox">
-                                    <input type="checkbox" id="remember1">
-                                    <label for="remember1">
-                                        <span class="rating">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bx-star'></i>
-                                        </span>
-                                        <i class='bx bx-check'></i>
-                                    </label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="group-checkbox">
-                                    <input type="checkbox" id="remember1">
-                                    <label for="remember1">
-                                        <span class="rating">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bx-star'></i>
-                                            <i class='bx bx-star'></i>
-                                        </span>
-                                        <i class='bx bx-check'></i>
-                                    </label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="group-checkbox">
-                                    <input type="checkbox" id="remember1">
-                                    <label for="remember1">
-                                        <span class="rating">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bx-star'></i>
-                                            <i class='bx bx-star'></i>
-                                            <i class='bx bx-star'></i>
-                                        </span>
-                                        <i class='bx bx-check'></i>
-                                    </label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="group-checkbox">
-                                    <input type="checkbox" id="remember1">
-                                    <label for="remember1">
-                                        <span class="rating">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bx-star'></i>
-                                            <i class='bx bx-star'></i>
-                                            <i class='bx bx-star'></i>
-                                            <i class='bx bx-star'></i>
-                                        </span>
-                                        <i class='bx bx-check'></i>
-                                    </label>
-                                </div>
-                            </li>
-                        </ul>
+        <div class="row box-description">
+            <div class="box">
+                <div class="box-header">
+                    description
+                </div>
+                <div class="product-detail-description">
+                    <button class="btn-flat btn-hover btn-view-description" id="view-all-description">
+                        view all
+                    </button>
+                    <div class="product-detail-description-content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laudantium obcaecati odit
+                            dolorem, doloremque accusamus esse neque ipsa dignissimos saepe quisquam tempore perferendis
+                            deserunt sapiente! Recusandae illum totam earum ratione.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam incidunt maxime rerum
+                            reprehenderit voluptas asperiores ipsam quas consequuntur maiores, at odit obcaecati vero
+                            sunt! Reiciendis aperiam perferendis consequuntur odio quas. Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Ut quaerat eum veniam doloremque nihil repudiandae odio
+                            ratione culpa libero tempora. Expedita, quo molestias. Minus illo quis dignissimos aliquid
+                            sapiente error!
+                        </p>
+                        <img src="./assets/images/products/jewellery-1.jpg" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusantium officia, quae
+                            fuga in exercitationem aliquam labore ex doloribus repellendus beatae facilis ipsam.
+                            Veritatis vero obcaecati iste atque aspernatur ducimus.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat quam praesentium id sit
+                            amet magnam ad, dolorum, cumque iste optio itaque expedita eius similique, ab adipisci
+                            dicta. Quod, quibusdam quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                            in corrupti ipsam sint error possimus commodi incidunt suscipit sit voluptatum quibusdam
+                            enim eligendi animi deserunt recusandae earum natus voluptas blanditiis?
+                        </p>
+                        <img src="./assets/images/products/jewellery-2.jpg" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ullam quam fugit veniam ipsum
+                            recusandae incidunt, ex ratione, magnam labore ad tenetur officia! In, totam. Molestias
+                            sapiente deserunt animi porro?
+                        </p>
                     </div>
                 </div>
-                <div class="col-9 col-md-12">
-                    <div class="box filter-toggle-box">
-                        <div class="row">
-                            <div class="col-12">
-                                <button class="btn-flat btn-hover btn-filter" id="filter-toggle">filter</button>
+            </div>
+
+        </div>
+        <div class="row box-review">
+            <div class="box">
+                <div class="box-header">
+                    review
+                </div>
+                <div>
+                    <div class="user-rate">
+                        <div class="user-info">
+                            <div class="user-avt">
+                                <img src="./assets/images/testimonial-1.jpg" alt="">
+                            </div>
+                            <div class="user-name">
+                                <span class="name">Anne Hathaway</span>
+                                <span class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </span>
                             </div>
                         </div>
+                        <div class="user-rate-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ea iste, veritatis nobis
+                            amet illum, cum alias magni dolores odio, eius quo excepturi veniam ipsa voluptatibus natus
+                            voluptas vero? Aspernatur!
+                        </div>
                     </div>
-                    <div class="box">
-                        <div class="row" id="products"></div>
+                    <div class="user-rate">
+                        <div class="user-info">
+                            <div class="user-avt">
+                                <img src="./assets/images/newsletter.png" alt="">
+                            </div>
+                            <div class="user-name">
+                                <span class="name">Anne Hathaway</span>
+                                <span class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="user-rate-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ea iste, veritatis nobis
+                            amet illum, cum alias magni dolores odio, eius quo excepturi veniam ipsa voluptatibus natus
+                            voluptas vero? Aspernatur!
+                        </div>
+                    </div>
+                    <div class="user-rate">
+                        <div class="user-info">
+                            <div class="user-avt">
+                                <img src="./assets/images/testimonial-1.jpg" alt="">
+                            </div>
+                            <div class="user-name">
+                                <span class="name">Anne Hathaway</span>
+                                <span class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="user-rate-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ea iste, veritatis nobis
+                            amet illum, cum alias magni dolores odio, eius quo excepturi veniam ipsa voluptatibus natus
+                            voluptas vero? Aspernatur!
+                        </div>
+                    </div>
+                    <div class="user-rate">
+                        <div class="user-info">
+                            <div class="user-avt">
+                                <img src="./assets/images/newsletter.png" alt="">
+                            </div>
+                            <div class="user-name">
+                                <span class="name">Anne Hathaway</span>
+                                <span class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="user-rate-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ea iste, veritatis nobis
+                            amet illum, cum alias magni dolores odio, eius quo excepturi veniam ipsa voluptatibus natus
+                            voluptas vero? Aspernatur!
+                        </div>
+                    </div>
+                    <div class="user-rate">
+                        <div class="user-info">
+                            <div class="user-avt">
+                                <img src="./assets/images/testimonial-1.jpg" alt="">
+                            </div>
+                            <div class="user-name">
+                                <span class="name">Anne Hathaway</span>
+                                <span class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="user-rate-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ea iste, veritatis nobis
+                            amet illum, cum alias magni dolores odio, eius quo excepturi veniam ipsa voluptatibus natus
+                            voluptas vero? Aspernatur!
+                        </div>
                     </div>
                     <div class="box">
                         <ul class="pagination">
@@ -504,8 +456,17 @@
                 </div>
             </div>
         </div>
+        <div class="row box-related">
+            <div class="box">
+                <div class="box-header">
+                    related products
+                </div>
+                <div class="row" id="related-products"></div>
+            </div>
+        </div>
     </div>
-    <!-- end products content -->
+    <!-- end product-detail content -->
+
 
     <!-- footer -->
     <footer class="bg-black">
@@ -580,7 +541,7 @@
     <!-- app js -->
     <script src="./js/app.js"></script>
     <script src="./js/index.js"></script>
-    <script src="./js/products.js"></script>
+    <script src="./js/product-detail.js"></script>
 </body>
 
 </html>

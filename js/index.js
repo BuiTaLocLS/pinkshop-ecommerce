@@ -107,7 +107,7 @@ categories.forEach(e => {
                     </div>
                 </div>
                 <div class="categories-btn">
-                    <a href="#">show all</a>
+                    <a href="./products.html">show all</a>
                 </div>
             </div>
         </div>
@@ -234,7 +234,7 @@ new_products.forEach(e => {
     let prod = `
     <div class="col-2 col-md-4 col-sm-6">
     <div class="showcase-products">
-
+    <a href="./product-detail.html">
         <div class="showcase-banner">
 
             <img src="${e.image1}" alt="Mens Winter Leathers Jackets" width="300"
@@ -289,6 +289,7 @@ new_products.forEach(e => {
 
         </div>
     </div>
+    </a>
 </div>
     `
     new_products_list.insertAdjacentHTML("beforeend", prod)
@@ -303,6 +304,7 @@ let top_rated_list = document.querySelector('#top-rated-products')
 top_rated_products.forEach(e => {
     let prod = `
     <div class="col-2 col-md-4 col-sm-6">
+    <a href="./product-detail.html">
     <div class="showcase-products">
 
         <div class="showcase-banner">
@@ -359,6 +361,7 @@ top_rated_products.forEach(e => {
 
         </div>
     </div>
+    </a>
 </div>
     `
     top_rated_list.insertAdjacentHTML("beforeend", prod)

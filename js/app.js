@@ -6,9 +6,6 @@ document.querySelectorAll('.mega-dropdown > a').forEach(e => {
     e.addEventListener('click', (event) => event.preventDefault())
 })
 
-document.querySelectorAll('#menu a').forEach(e => {
-    e.addEventListener('click', (event) => event.preventDefault())
-})
 
 
 let menu_list = document.querySelectorAll('#menu>ul>li');
